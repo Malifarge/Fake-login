@@ -13,3 +13,5 @@ const Input = ({handleChange,type,name,value,placeholder,error, disabled}) =>{
     </fieldset>
     )
 }
+
+export default Input

@@ -24,7 +24,7 @@ const Profile = () =>{
     return(
         <>
             <H1>Profile</H1>
-            <Card user={user}/>
+            {user && <Card user={user}/>}
         </>
     )
 }

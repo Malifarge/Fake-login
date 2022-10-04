@@ -35,7 +35,7 @@ const Profile = () =>{
             {user && <Card user={user}/>}
             <H2>Friends</H2>
             <section className='sectionFriends'>
-                {friends.length>0 ? <section className='sectionFriends'><article className="friendslist">{friends.map(friend=>{ return <p key={friend.name.first}>{friend.name.first} {friend.name.last}</p>})} </article> <button className="centerBtn"><Link to={'/Friends'}>see Friends</Link></button></section> : <button className="centerBtn" onClick={handleClickAdd}>add Friend</button> }
+                {friends.length>0 ? <section className='sectionFriends'><article className="friendslist">{friends.map(friend=>{ return <p key={friend.name.first}>{friend.name.first} {friend.name.last}</p>})} </article> <button><Link to={'/Friends'}>see Friends</Link></button></section> : <button onClick={handleClickAdd}>add Friend</button> }
             </section>
         </>
     )

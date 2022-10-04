@@ -14,6 +14,7 @@ const Card = ({user}) =>{
 
             <div className="details">
                 <div className="user_photo horizontal_center">
+                    {/* eslint-disable-next-line  */}
                     <img src={user.picture.large}/>
                     <p>{details.title}</p>
                     <p>{details.value}</p>

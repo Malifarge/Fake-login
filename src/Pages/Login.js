@@ -18,8 +18,8 @@ const Login = () =>{
 
     const formik = useFormik({
         initialValues: {
-            email: 'jean@gmail.com',
-            password: 'JFred?99'
+            email: '',
+            password: ''
         },
         onSubmit: async value => {
             const dataUser = await getUser()
